@@ -15,7 +15,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "join_cache"
-  gem.homepage = "http://github.com/kevinbongart/join_cache"
+  gem.homepage = "http://github.com/KevinBongart/join_cache"
   gem.license = "MIT"
   gem.summary = "Faster ActiveRecord associations using Rails cache."
   gem.email = "contact@kevinbongart.net"

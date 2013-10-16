@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_join_cache.rb"
   ]
-  s.homepage = "http://github.com/kevinbongart/join_cache"
+  s.homepage = "http://github.com/KevinBongart/join_cache"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.23"
