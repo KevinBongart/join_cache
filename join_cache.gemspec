@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "join_cache.gemspec",
     "lib/join_cache.rb",
     "test/helper.rb",
     "test/test_join_cache.rb"
