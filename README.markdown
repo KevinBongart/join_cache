@@ -2,6 +2,8 @@
 
 Faster ActiveRecord associations using Rails cache.
 
+[![Gem Version](https://badge.fury.io/rb/join_cache.png)](http://badge.fury.io/rb/join_cache)
+
 ## What?
 
 Let's say you scaffolded your Rails app and ended up with this:
