@@ -47,10 +47,12 @@ class Employee < ActiveRecord::Base
 end
 ```
 
+It also works with `has_many :through` associations!
+
 ## TODO
 
-* [Support has_many :through](https://github.com/KevinBongart/join_cache/issues/1)
 * [Support callbacks: after_add and after_remove](https://github.com/KevinBongart/join_cache/issues/2)
+* [Add tests](https://github.com/KevinBongart/join_cache/issues/3)
 
 [View the full list](https://github.com/KevinBongart/join_cache/issues)
 
