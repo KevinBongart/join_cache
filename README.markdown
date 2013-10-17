@@ -49,6 +49,8 @@ end
 
 It also works with `has_many :through` associations!
 
+Take a look at this [example app](https://github.com/KevinBongart/join_cache_example).
+
 ## TODO
 
 * [Support callbacks: after_add and after_remove](https://github.com/KevinBongart/join_cache/issues/2)
