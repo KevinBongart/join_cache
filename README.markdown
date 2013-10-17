@@ -47,15 +47,26 @@ class Employee < ActiveRecord::Base
 end
 ```
 
+## TODO
+
+* [Support has_many :through](https://github.com/KevinBongart/join_cache/issues/1)
+* [Support callbacks: after_add and after_remove](https://github.com/KevinBongart/join_cache/issues/2)
+
+[View the full list](https://github.com/KevinBongart/join_cache/issues)
+
 ## Contributing to join_cache
 
 * Fork the project.
 * Start a feature/bugfix branch.
 * Commit and push until you are happy with your contribution.
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+
+## I came here looking for Johnny Cash
+
+Here you go:
+
+![Johnny Cash](http://i.imgur.com/jmt2geX.gif)
 
 ## Copyright
 
 Copyright (c) 2013 Kevin Bongart. See LICENSE.txt for
 further details.
-
