@@ -18,7 +18,7 @@ Retrieving the teams of one employee generates an inner join:
 
 ```ruby
 bob.teams
-Team Load SELECT "teams".* FROM "teams" INNER JOIN "employees_teams" ON "teams"."id" = "employees_teams"."team_id" WHERE "employees_teams"."employee_id" = ?  [["employee_id", 1]]
+=> Team Load SELECT "teams".* FROM "teams" INNER JOIN "employees_teams" ON "teams"."id" = "employees_teams"."team_id" WHERE "employees_teams"."employee_id" = ?  [["employee_id", 1]]
 ```
 
 The gem join_cache generates methods to store the team ids in cache:
@@ -51,7 +51,31 @@ end
 
 It also works with `has_many :through` associations!
 
+```ruby
+class Physician < ActiveRecord::Base
+  has_many :appointments
+  has_many :patients, through: :appointments
+  include JoinCache
+end
+
+freud.patients
+=> Patient Load SELECT "patients".* FROM "patients" INNER JOIN "appointments" ON "patients"."id" = "appointments"."patient_id" WHERE "appointments"."physician_id" = ?  [["physician_id", 1]]
+
+freud.cached_patient_ids
+=> [4, 8, 15, 16, 23, 42]
+
+freud.cached_patients
+=> Patient.where(id: [4, 8, 15, 16, 23, 42])
+=> Patient Load SELECT "patients".* FROM "patients" WHERE "patients"."id" IN (4, 8, 15, 16, 23, 42)
+```
+
 Take a look at this [example app](https://github.com/KevinBongart/join_cache_example).
+
+## Performance
+
+I ran a very scientific study using PostgreSQL on Heroku (shorter means better):
+
+![](http://f.cl.ly/items/0f3Q1l1c073s1T1b1p0Q/screenshot%20316.png)
 
 ## TODO
 
