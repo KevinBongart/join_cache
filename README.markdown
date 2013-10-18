@@ -73,9 +73,12 @@ Take a look at this [example app](https://github.com/KevinBongart/join_cache_exa
 
 ## Performance
 
-I ran a very scientific study using PostgreSQL on Heroku (shorter means better):
+I ran [a very scientific study](http://i0.kym-cdn.com/photos/images/original/000/234/765/b7e.jpg) using Heroku, PostgreSQL, the [example app](https://github.com/KevinBongart/join_cache_example), its seeds.rb and speed.rake files.
+Shorter means better:
 
-![](http://f.cl.ly/items/0f3Q1l1c073s1T1b1p0Q/screenshot%20316.png)
+![](http://f.cl.ly/items/3j0N0Y3j3d3B352x3009/screenshot%20320.png)
+
+See? 30% faster!
 
 ## TODO
 
