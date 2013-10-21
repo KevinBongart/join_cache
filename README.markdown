@@ -37,7 +37,7 @@ bob.cached_teams
 In your gemfile:
 
 ```ruby
-gem 'joined_table'
+gem 'join_cache`
 ```
 
 In your model:
