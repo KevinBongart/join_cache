@@ -24,9 +24,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "join_cache.gemspec",
-    "lib/join_cache.rb",
-    "test/helper.rb",
-    "test/test_join_cache.rb"
+    "lib/join_cache.rb"
   ]
   s.homepage = "http://github.com/KevinBongart/join_cache"
   s.licenses = ["MIT"]
