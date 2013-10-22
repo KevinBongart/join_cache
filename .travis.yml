@@ -1,6 +1,6 @@
 language: ruby
 rvm:
   - "1.9.3"
-before_script: "cd test/dummy"
+before_install: "cd test/dummy"
 install: "bundle install"
 script: "bundle exec rspec spec"

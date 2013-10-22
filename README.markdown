@@ -3,6 +3,7 @@
 Faster ActiveRecord associations using Rails cache.
 
 [![Gem Version](https://badge.fury.io/rb/join_cache.png)](http://badge.fury.io/rb/join_cache)
+[![Build Status](https://travis-ci.org/KevinBongart/join_cache.png?branch=travis_ci)](https://travis-ci.org/KevinBongart/join_cache)
 
 ## What?
 
