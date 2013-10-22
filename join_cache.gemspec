@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "join_cache"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kevin Bongart"]
-  s.date = "2013-10-17"
+  s.date = "2013-10-22"
   s.email = "contact@kevinbongart.net"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -24,7 +24,70 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "join_cache.gemspec",
-    "lib/join_cache.rb"
+    "lib/join_cache.rb",
+    "test/dummy/.gitignore",
+    "test/dummy/.rspec",
+    "test/dummy/Gemfile",
+    "test/dummy/Gemfile.lock",
+    "test/dummy/README.rdoc",
+    "test/dummy/Rakefile",
+    "test/dummy/app/assets/images/.keep",
+    "test/dummy/app/assets/javascripts/application.js",
+    "test/dummy/app/assets/stylesheets/application.css",
+    "test/dummy/app/controllers/application_controller.rb",
+    "test/dummy/app/controllers/concerns/.keep",
+    "test/dummy/app/helpers/application_helper.rb",
+    "test/dummy/app/mailers/.keep",
+    "test/dummy/app/models/.keep",
+    "test/dummy/app/models/appointment.rb",
+    "test/dummy/app/models/assemblies_parts.rb",
+    "test/dummy/app/models/assembly.rb",
+    "test/dummy/app/models/concerns/.keep",
+    "test/dummy/app/models/part.rb",
+    "test/dummy/app/models/patient.rb",
+    "test/dummy/app/models/physician.rb",
+    "test/dummy/app/views/layouts/application.html.erb",
+    "test/dummy/bin/bundle",
+    "test/dummy/bin/rails",
+    "test/dummy/bin/rake",
+    "test/dummy/config.ru",
+    "test/dummy/config/application.rb",
+    "test/dummy/config/boot.rb",
+    "test/dummy/config/database.yml",
+    "test/dummy/config/environment.rb",
+    "test/dummy/config/environments/development.rb",
+    "test/dummy/config/environments/production.rb",
+    "test/dummy/config/environments/test.rb",
+    "test/dummy/config/initializers/backtrace_silencers.rb",
+    "test/dummy/config/initializers/filter_parameter_logging.rb",
+    "test/dummy/config/initializers/inflections.rb",
+    "test/dummy/config/initializers/mime_types.rb",
+    "test/dummy/config/initializers/secret_token.rb",
+    "test/dummy/config/initializers/session_store.rb",
+    "test/dummy/config/initializers/wrap_parameters.rb",
+    "test/dummy/config/locales/en.yml",
+    "test/dummy/config/routes.rb",
+    "test/dummy/db/migrate/20131022000628_create_physicians.rb",
+    "test/dummy/db/migrate/20131022000639_create_patients.rb",
+    "test/dummy/db/migrate/20131022000722_create_appointments.rb",
+    "test/dummy/db/migrate/20131022011147_create_assemblies.rb",
+    "test/dummy/db/migrate/20131022011202_create_parts.rb",
+    "test/dummy/db/migrate/20131022011217_create_assemblies_parts.rb",
+    "test/dummy/db/schema.rb",
+    "test/dummy/db/seeds.rb",
+    "test/dummy/lib/assets/.keep",
+    "test/dummy/lib/tasks/.keep",
+    "test/dummy/log/.keep",
+    "test/dummy/public/404.html",
+    "test/dummy/public/422.html",
+    "test/dummy/public/500.html",
+    "test/dummy/public/favicon.ico",
+    "test/dummy/public/robots.txt",
+    "test/dummy/spec/models/has_and_belongs_to_many_spec.rb",
+    "test/dummy/spec/models/has_many_through_spec.rb",
+    "test/dummy/spec/spec_helper.rb",
+    "test/dummy/vendor/assets/javascripts/.keep",
+    "test/dummy/vendor/assets/stylesheets/.keep"
   ]
   s.homepage = "http://github.com/KevinBongart/join_cache"
   s.licenses = ["MIT"]
