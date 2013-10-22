@@ -3,4 +3,8 @@ rvm:
   - "1.9.3"
 gemfile: "test/dummy/Gemfile"
 install: "bundle install"
-script: "cd test/dummy && bundle exec rspec spec"
+
+script:
+- "cd test/dummy && RAILS_ENV=test bundle exec rake db:migrate --trace"
+- "cd test/dummy && bundle exec rake db:test:prepare"
+- "cd test/dummy && bundle exec rake spec"
