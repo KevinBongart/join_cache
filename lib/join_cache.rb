@@ -24,13 +24,11 @@ module JoinCache
       cached_ids_name = "cached_#{singular_name}_ids"             # cached_team_ids
       primary_key     = association.foreign_key                   # employee_id
       foreign_key     = association.association_foreign_key       # team_id
-      join_table      = association.join_table                    # employees_teams
-      join_model      = join_table.classify.pluralize.constantize # EmployeesTeams
 
       # cached_team_ids
       define_method(cached_ids_name) do
         Rails.cache.fetch("#{cache_key}/#{cached_ids_name}") do
-          join_model.where(primary_key => id).pluck(foreign_key.to_sym)
+          send(foreign_key.pluralize.to_sym)
         end
       end
 
@@ -67,13 +65,11 @@ module JoinCache
       cached_ids_name = "cached_#{singular_name}_ids"             # cached_patient_ids
       primary_key     = self.name.foreign_key                     # employee_id
       foreign_key     = association.foreign_key                   # patient_id
-      join_table      = association.options[:through]             # appointments
-      join_model      = join_table.to_s.classify.constantize      # Appointment
 
       # cached_patient_ids
       define_method(cached_ids_name) do
         Rails.cache.fetch("#{cache_key}/#{cached_ids_name}") do
-          join_model.where(primary_key => id).pluck(foreign_key.to_sym)
+          send(foreign_key.pluralize.to_sym)
         end
       end
 
