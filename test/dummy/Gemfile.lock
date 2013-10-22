@@ -1,7 +1,7 @@
 PATH
   remote: ../../../join_cache
   specs:
-    join_cache (0.2.0)
+    join_cache (0.2.1)
 
 GEM
   remote: https://rubygems.org/

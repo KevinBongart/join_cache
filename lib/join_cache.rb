@@ -27,7 +27,7 @@ module JoinCache
 
       # cached_team_ids
       define_method(cached_ids_name) do
-        Rails.cache.fetch("#{cache_key}/#{cached_ids_name}") do
+        Rails.cache.fetch(join_cache_key(cached_ids_name)) do
           send(foreign_key.pluralize.to_sym)
         end
       end
@@ -68,7 +68,7 @@ module JoinCache
 
       # cached_patient_ids
       define_method(cached_ids_name) do
-        Rails.cache.fetch("#{cache_key}/#{cached_ids_name}") do
+        Rails.cache.fetch(join_cache_key(cached_ids_name)) do
           send(foreign_key.pluralize.to_sym)
         end
       end
@@ -77,6 +77,10 @@ module JoinCache
       define_method(cached_name) do
         association.klass.where(id: send(cached_ids_name))
       end
+    end
+
+    def join_cache_key(cached_ids_name)
+      "join_cache/#{cache_key}/#{cached_ids_name}"
     end
   end
 end
