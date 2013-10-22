@@ -84,7 +84,7 @@ See? 30% faster!
 ## TODO
 
 * [Support callbacks: after_add and after_remove](https://github.com/KevinBongart/join_cache/issues/2)
-* [Add tests](https://github.com/KevinBongart/join_cache/issues/3)
+* [Support cached_ids for all collection associations](https://github.com/KevinBongart/join_cache/issues/5)
 
 [View the full list](https://github.com/KevinBongart/join_cache/issues)
 
