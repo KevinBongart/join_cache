@@ -98,7 +98,7 @@ See? 30% faster!
 
 Here you go:
 
-![Johnny Cash](http://i.imgur.com/jmt2geX.gif)
+![Johnny Cash](http://screenshots.kevinbongart.net/PWYx.gif)
 
 ## Copyright
 
